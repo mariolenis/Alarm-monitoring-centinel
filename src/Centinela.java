@@ -757,7 +757,7 @@ public class Centinela implements Runnable{
                         ConnectionConfiguration c = new ConnectionConfiguration("localhost", 5222, "Axar");
                         xmppNotificaciones = new XMPPConnection(c);
                         xmppNotificaciones.connect();
-                        xmppNotificaciones.login("seguridad.online", "online__2013");
+                        xmppNotificaciones.login("seguridad.online", "<gtalk pass>");
                         Presence presence = new Presence(Presence.Type.available);
                         xmppNotificaciones.sendPacket(presence);
 
