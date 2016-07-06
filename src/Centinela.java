@@ -101,7 +101,7 @@ public class Centinela implements Runnable{
             String driver = "com.mysql.jdbc.Driver";
             Class.forName(driver);
             String url = "jdbc:mysql://localhost/axar";
-            conn = (Connection)(DriverManager.getConnection(url, "kerberus", "aster1sk"));
+            conn = (Connection)(DriverManager.getConnection(url, "<user>", "<pass>"));
             
             ultimaHora  = Calendar.getInstance();
             horaSuper   = Calendar.getInstance();
